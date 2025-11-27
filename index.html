@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Fatur Rahman Impung</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #007bff; /* Biru Primer */
+            --secondary-color: #333;
+            --background-color: #f4f7f6;
+            --card-background: #ffffff;
+            --text-color: #444;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: var(--background-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            display: flex; /* Menggunakan Flexbox untuk tata letak 2 kolom */
+            overflow: hidden; /* Untuk menjaga border-radius */
+        }
+
+        /* --- TATA LETAK KOLOM --- */
+        .sidebar {
+            width: 300px; /* Lebar kolom kiri */
+            background: var(--secondary-color);
+            padding: 30px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .main-content {
+            flex-grow: 1; /* Mengisi sisa ruang */
+            padding: 30px;
+        }
+        
+        /* --- GAMBAR PROFIL --- */
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px auto;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar h1 {
+            color: white;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .sidebar p {
+            color: #ddd;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+
+        /* --- SEKSI KONTEN UTAMA --- */
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Styling List */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px dotted #eee;
+            font-size: 0.95em;
+        }
+
+        /* Styling Kontak */
+        .contact-list li {
+            background: none;
+            padding: 10px 0;
+            text-align: left;
+            border: none;
+            margin: 0;
+        }
+
+        .contact-list a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-list i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        /* Media Query untuk Mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Ubah tata letak menjadi satu kolom */
+                margin: 20px auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                order: -1; /* Pindahkan sidebar ke atas */
+                padding: 20px 15px;
+            }
+            
+            .main-content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="sidebar">
+            <img src="foto/fatur.jpg" alt="Foto Profil Fatur" class="profile-img" />
+            <h1>Fatur Rahman Impung</h1>
+            <p>Mahasiswa Sistem Informasi</p>
+
+            <div class="section" style="text-align: left;">
+                <h2 style="color: white; border-bottom: 2px solid var(--primary-color);">Kontak</h2>
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:impungfaturrahman@gmail.com">
+                            <i class="fas fa-envelope"></i> impungfaturrahman@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/fa_turrrrr" target="_blank">
+                            <i class="fab fa-instagram"></i> @fa_turrrrr
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6282251190320">
+                            <i class="fab fa-whatsapp"></i> 082251190320
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section" style="text-align: left;">
+                <h2 style="color: white; border-bottom: 2px solid var(--primary-color);">Bahasa</h2>
+                <ul class="contact-list">
+                    <li>Indonesia (Native)</li>
+                    <li>Inggris (Pemahaman Cukup)</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p>Mahasiswa Sistem Informasi yang memiliki minat dalam desain sistem, manajemen data, Analisis Sistem, dan pengembangan aplikasi. Memiliki kemampuan kerja tim dan pengalaman organisasi yang kuat.</p>
+            </div>
+
+            <div class="section">
+                <h2>Pendidikan & Organisasi</h2>
+                <ul>
+                    <li>Mahasiswa S1 Sistem Informasi – Unika Atma Jaya (2023 – Sekarang)</li>
+                    <li>Anggota Senat Mahasiswa Fakultas Biosains, Teknologi dan Inovasi</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Keterampilan Teknis</h2>
+                <ul>
+                    <li>Pemrograman Dasar: HTML, CSS, dasar JavaScript</li>
+                    <li>Basis Data: MySQL / MariaDB</li>
+                    <li>Analisis Sistem Informasi</li>
+                    <li>Desain UI/UX Dasar</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
